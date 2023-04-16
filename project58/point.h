@@ -20,34 +20,43 @@ public:
 	Point sub(Point point);
 	Point mul(int value);
 
-	Point static operator+(Point p1, Point p2) {
-		int x = p1.x + p2.x;
-		int y = p1.y + p2.y;
-		return Point(x, y);
-	}
+	//Point static operator+(Point p1, Point p2) {
+	//	int x = p1.x + p2.x;
+	//	int y = p1.y + p2.y;
+	//	return Point(x, y);
+	//}
 
 
-	Point static operator+(Point p1, int value) {
-		int x = p1.x + value;
-		int y = p1.y + value;
-		return Point(x, y);
+	//Point static operator+(Point p1, int value) {
+	//	int x = p1.x + value;
+	//	int y = p1.y + value;
+	//	return Point(x, y);
+	//}
+
+	//Point static operator-(Point p1, int value) {
+	//	int x = p1.x - value;
+	//	int y = p1.y - value;
+	//	return Point(x, y);
+	//}
+
+	//Point static operator-(Point p1, Point p2) {
+	//	int x = p1.x - p2.x;
+	//	int y = p1.y - p2.y;
+	//	return Point(x, y);
+	//}
+
+	//Point static operator-(Point point) {
+	//	return Point(-point.x, -point.y);
+	//}
+
+	//Point static operator+(Point point) {
+	//	return Point(+point.x, +point.y);
+	//}
+
+	/*Point static operator*(Point point) {
+		return Point(point.x, point.y);
 	}
 
-	Point static operator-(Point p1, int value) {
-		int x = p1.x - value;
-		int y = p1.y - value;
-		return Point(x, y);
-	}
-
-	Point static operator-(Point p1, Point p2) {
-		int x = p1.x - p2.x;
-		int y = p1.y - p2.y;
-		return Point(x, y);
-	}
-
-	Point static operator-(Point point) {
-		return Point(-point.x, -point.y);
-	}
 
 	int static operator*(Point p1, Point p2) {
 		int result = (int)sqrt(pow((p1.x + p2.x), 2) + pow((p1.y + p2.y), 2));
@@ -56,9 +65,9 @@ public:
 
 	Point static operator*(Point p1, int value) {
 		int x = p1.x * value;
-		int y = p1.y - value;
+		int y = p1.y * value;
 		return Point(x, y);
-	}
+	}*/
 
 	// >= > < <= = 
 };
